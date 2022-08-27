@@ -1,0 +1,241 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  font-family: "bai jamjuree", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  height: auto;
+  margin: 20px 0;
+  width: auto;
+}
+
+/* defining general parameters */
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 30px;
+  width: 300px;
+}
+
+.header-logo {
+  margin: 40px;
+  width: auto;
+}
+
+img {
+  margin: 60px 0 20px;
+  width: 100%;
+}
+
+/* styling the buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0 70px;
+  width: 100%;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+button:first-child {
+  background-color: hsl(171, 66%, 44%);
+}
+
+button:last-child {
+  background-color: hsl(233, 100%, 69%);
+}
+
+/* styling grid section */
+.grid-text-elements {
+  margin: 0 0 150px 0;
+}
+
+.grid-text-elements h2 {
+  margin: 40px 0 10px 0;
+}
+
+/* Styling flex section */
+.flex-section img {
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.flex-elements {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.affiliated-companies-logo {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 70px;
+}
+
+.affiliated-companies-logo img {
+  width: auto;
+}
+
+/* styling footer */
+footer {
+  align-items: center;
+  background-color: hsl(200, 25%, 95%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer img:first-of-type {
+  width: 50px;
+}
+
+ul {
+  color: hsl(201, 11%, 66%);
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  font-weight: 400;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0%;
+  text-align: center;
+}
+
+.footer-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-icons img {
+  margin-bottom: 50px;
+}
+
+.attribution {
+  background-color: hsl(172, 95%, 39%);
+  border-radius: 15px;
+  color: hsl(223, 20%, 93%);
+  font-size: 14px;
+  margin: 50px 0;
+  padding: 10px;
+  text-align: center;
+  width: 100vw;
+  word-spacing: 5px;
+}
+
+.attribution a {
+  color: hsl(228, 80%, 49%);
+}
+
+/* styling media querries */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .main-container {
+    width: 750px;
+  }
+
+  .grid-section {
+    display: grid;
+    gap: 7%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    width: 300%;
+  }
+
+  .grid-section img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .grid-text-elements h2 {
+    text-align: start;
+  }
+
+  .grid-text-elements p {
+    text-align: start;
+  }
+
+  .grid-text-elements {
+    margin: 50px 0;
+    padding-right: 400px;
+  }
+
+  .flex-section {
+    display: flex;
+    gap: 40px;
+    width: 150%;
+  }
+
+  .flex-section p {
+    text-align: center;
+  }
+  .affiliated-companies-logo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 150%;
+  }
+
+  .footer-section {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px 0 0;
+    width: 1125px;
+  }
+
+  button {
+    align-self: center;
+    width: 50%;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: start;
+  }
+
+  .footer-section img {
+    margin: 0%;
+  }
+}
