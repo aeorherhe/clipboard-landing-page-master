@@ -1,0 +1,94 @@
+@media screen and (min-width: 768px) {
+  body {
+    width: auto;
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .main-container {
+    width: 80%;
+  }
+
+  .flex-section {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .flex-section p {
+    text-align: center;
+  }
+
+  .affiliated-companies-logo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .footer-section {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px 0 0;
+    width: 100%;
+  }
+
+  button {
+    align-self: center;
+    width: 50%;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: start;
+  }
+
+  .footer-section img {
+    margin: 0%;
+  }
+
+  .attribution {
+    font-size: 14px;
+    word-spacing: 4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 750px;
+  }
+
+  .grid-section {
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    width: 100vw;
+    margin-left: -30%;
+  }
+
+  .grid-section img {
+    height: fit-content;
+    object-fit: contain;
+  }
+
+  .grid-text-elements {
+    width: 90%;
+    padding-top: 20px;
+    margin: 50px 0;
+  }
+
+  .grid-text-elements h2 {
+    text-align: start;
+  }
+
+  .grid-text-elements p {
+    text-align: start;
+  }
+
+  .flex-section,
+  .affiliated-companies-logo {
+    width: 150%;
+  }
+}
